@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
+  <style type="text/css">
+    body, h2 {
+     color: black;
+    }
+    button {
+     margin: 10px 0px 10px 0px;
+     width: 200px;
+     height: 40px;
+    }
+    .footer {
+     position: absolute;
+     bottom: 3%;
+    }
+    .logo {
+     width: 80%;
+     margin-top: 30%;
+     margin-bottom: 20%;
+    }
+    .ayima-logo {
+     width: 50%;
+    }
+  </style>
+</head>
+<body bgcolor="white">
+<center>
+  <img class="logo" src="https://raw.githubusercontent.com/Ayima/sitemap-xml-to-csv/master/static/app-logo.png" alt="XML Sitemap to CSV">
+  <div class="inline form-group" align="left">
+    <label for="inputURL" style="font-family:'Roboto',sans-serif;">Enter sitemap URL</label>
+    <input type="text" id="inputURL" name="sitemapURL">
+  </div>
+  <div>
+    <button class="action" onclick="return google.script.run.getSitemapFromUrl(inputURL.value);">Convert to CSV</button>
+  </div>
+  <div class="footer">
+    <a href="https://www.ayima.com/">
+      <img class="ayima-logo" src="https://raw.githubusercontent.com/Ayima/sitemap-xml-to-csv/master/static/ayima-dark-blue.png" alt="Ayima">
+    </a>
+  </div>
+</center>
+</body>
+</html>
