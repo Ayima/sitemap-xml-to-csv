@@ -1,11 +1,4 @@
 /**
- * A special function that runs when add-on is installed.
- **/
-function onInstall(e) {
-  onOpen(e);
-}
-
-/**
  * A special function that runs when the spreadsheet is open, used to add a
  * custom menu to the spreadsheet.
  */
