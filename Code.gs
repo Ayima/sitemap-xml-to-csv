@@ -267,6 +267,8 @@ function writeTable(spreadsheet, sheet, table){
  */
 function getSitemapFromUrl(sitemapURL){
   var result = showDeleteMessage();
+  if (result != ui.Button.YES)
+    return;
   if ((sitemapURL == null) || (sitemapURL == ''))
     return;
   getSitemap(sitemapURL);
